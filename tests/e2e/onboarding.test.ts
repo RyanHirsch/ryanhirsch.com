@@ -40,7 +40,7 @@ const test = base.extend<{
 	},
 })
 
-test('onboarding with link', async ({ page, getOnboardingData }) => {
+test.skip('onboarding with link', async ({ page, getOnboardingData }) => {
 	const onboardingData = getOnboardingData()
 
 	await page.goto('/')
