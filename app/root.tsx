@@ -222,6 +222,11 @@ function App() {
 							)}
 						</div>
 						<div className="block w-full sm:hidden">{searchBar}</div> */}
+						{user ? (
+							<div className="flex items-center gap-10">
+								<UserDropdown />
+							</div>
+						) : null}
 					</nav>
 				</header>
 
